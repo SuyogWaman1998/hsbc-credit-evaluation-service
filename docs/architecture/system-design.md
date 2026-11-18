@@ -267,8 +267,14 @@ These must be decided and documented before implementation of the affected area.
 
 ## 19. Implementation boundary
 
-The separate `CES implementation` workspace implements the finalized decisions recorded in this repository. If implementation reveals a genuine architectural problem, the design must be revisited and the resulting change documented as a new or superseding architecture decision rather than silently changing the implementation contract.
+The separate CES implementation workspace implements the finalized decisions recorded in this repository. If implementation reveals a genuine architectural problem, the design must be revisited and the resulting change documented as a new or superseding architecture decision rather than silently changing the implementation contract.
 
 ## 20. Related decisions
 
 See the ADRs under `docs/decisions/` for the rationale and history behind significant architecture decisions.
+
+## 21. Project delivery roadmap
+
+CES follows an incremental-delivery approach: establish the overall roadmap upfront, then design, document, implement, test, and sign off one phase at a time. Each phase must deliver working, tested behavior and current documentation before it is considered complete. Safe overlap is allowed where dependencies and interfaces are clear.
+
+The eight delivery phases, scope, and exit criteria are maintained in [`docs/project-roadmap.md`](../project-roadmap.md). The roadmap is a delivery plan; it does not mean every future-phase design decision is already finalized.
